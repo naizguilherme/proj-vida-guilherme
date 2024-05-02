@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root{
-    --cor-de-fundo:  #db1d1d;
-    --azul:#37c80a;
-    --branco:#480ea0;
-    --botao-ativo:#b0b0b0;
-    --botao-inativo:#c615e9;
-    --texto-fundo:#0099ff7d;
+    --cor-de-fundo:  #6f098f4f;
+    --azul:#ffffff;
+    --branco:#251f1f;
+    --botao-ativo:#69e616;
+    --botao-inativo:#0debb3;
+    --texto-fundo:#db1d1d;
 }
 
 body{
     background-color: var(--cor-de-fundo);
-    color: var(--branco);
+    color: var(--azul);
     font-family: "chakra Petch", sans-serif;
 }
     
@@ -82,14 +82,29 @@ body{
 }
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--branco);
+    color: var(--azul);
     text-transform: uppercase;
 }
  
 .contador{
-    font-size: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+.contador-digito-numero{
+ font-size: 80px;  
+ margin: 0;  
+}
+.contador-digito-texto{
+    color: var(--azul);
+}
+
+
 
 @media screen and (min-width: 768px){
     .botoes{
@@ -103,3 +118,4 @@ body{
     }
 
 }
+    
